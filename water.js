@@ -40,7 +40,7 @@ function displayStationData(stationData){
     })
 }
 
-filterInput.addEventListener('input', (e)=> {
+filterInput.addEventListener('keyup', (e)=> {
     const searchStr = e.target.value;
     console.log(searchStr);
     const filteredStation =stationData.filter((data)=>{return(data.station_name.includes(`${searchStr}`))}); 
