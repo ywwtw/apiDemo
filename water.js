@@ -37,6 +37,8 @@ function displayStationData(stationData){
         }else{
             pHcolor[index].style.backgroundColor="#019247";
         } 
+        const firstdata = document.querySelector("tr td:nth-child(2)");
+        firstdata.style.borderTop="none";
     })
 }
 
